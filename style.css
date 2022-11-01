@@ -1,7 +1,140 @@
 :root {
   --main-bg: black;
   --main-text: white;
+  --accent-bg: white;
+  --accent-text: black;
+  --underline-1: green;
+  --underline-2: orange;
 }
 body {
   margin: 0;
+  overflow-x: hidden;
+}
+nav li:last-child {
+  margin-right: 3rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  width: 100%;
+  background-color: var(--accent-bg);
+  color: var(--accent-text);
+}
+nav img {
+  height: 55px;
+  aspect-ratio: 1/1;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+nav ul {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  text-align: left;
+  list-style: none;
+  height: 65px;
+  margin: 0;
+}
+nav ul li {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+nav ul li a,
+nav ul li a:active,
+nav ul li:link,
+nav ul li:visited {
+  text-decoration: none;
+  color: var(--accent-text);
+}
+footer {
+  width: 100vw;
+  height: 5rem;
+  background-color: var(--accent-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upper {
+  background-color: var(--main-bg);
+  width: 100%;
+  min-height: 150vh;
+}
+nav ul li {
+  text-decoration: none;
+  position: relative;
+  text-align: left;
+}
+
+nav ul li:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: 4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 0%;
+  background: var(--underline-1);
+  transition: 0.8s;
+  border-radius: 10%;
+}
+nav ul li:hover:after {
+  width: 80%;
+  background-color: var(--underline-2);
+}
+ul.dropdown {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li a,
+.dropbtn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+li.dropdown {
+  display: inline-block;
+  transition: 1s;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--accent-bg);
+  min-width: 70px;
+  box-shadow: rgba(104, 104, 245, 1) 0px 0px 0px 3px;
+  z-index: 1;
+  margin-top: 20px;
+}
+.dropdown-content a {
+  color: var(--accent-text);
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: 1s;
+}
+.dropdown-content-2 {
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top;
+}
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
