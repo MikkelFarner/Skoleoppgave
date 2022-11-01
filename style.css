@@ -1,0 +1,7 @@
+:root {
+  --main-bg: black;
+  --main-text: white;
+}
+body {
+  margin: 0;
+}
