@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital scale 1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Skoleoppgave - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ba6bf168c5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="xd">
+    <nav id="navbar">
+      </a>
+      <ul>
+        <li><a href="index.html"><img src="images/home.png" alt="Home" /> </li>
+        <li class="dropdown">
+          <a href="side2.html" class="dropbtn">Side2</a>
+          <div class="dropdown-content dropdown-content-2">
+            <a href="#">1</a>
+            <a href="#">Side2</a>
+            <a href="#">Side2abc</a>
+          </div>
+        </li>
+        <li><a href="side3.html">Littlenger</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+      <div class="dark">
+      <input name="theme" type="checkbox" id="darkmode">
+        <label for="darkmode">Darkmode</label>
+      </div>
+    </nav>
+    <section class="upper" id="center">
+      <div class="container">
+        <form action="https://formsubmit.co/7dd5dc65eb79d1c3f6eaaad05b33c657" method="POST">
+          <h1>Give your Feedback</h1>
+          <div class="id">
+            <input type="text" name="Name" placeholder="Full name" required />
+            <i class="far fa-user"></i>
+          </div>
+          <div class="id">
+            <input
+              type="email"
+              name="Email"
+              placeholder="Email address"
+              required
+            />
+            <i class="far fa-envelope"></i>
+          </div>
+          <textarea
+            name="Message"
+            cols="15"
+            rows="5"
+            placeholder="Enter you feedback here..."
+            required
+          ></textarea>
+          <br>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>© Kiwi A/S | Designed by Mikkel and Eivind</p>
+    </footer>
+    
+    <!------javascript------>
+
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll =function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top ="0px";
+        } else {
+          document.getElementById("navbar").style.top ="-300px";
+        }
+
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
+  </body>
+</html>
