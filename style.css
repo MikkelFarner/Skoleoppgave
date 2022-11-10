@@ -107,7 +107,7 @@ nav ul li:after {
   border-radius: 10%;
 }
 nav ul li:hover:after {
-  width: 80%;
+  width: 60%;
 }
 ul.dropdown {
   list-style-type: none;
