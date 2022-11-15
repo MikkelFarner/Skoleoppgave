@@ -313,7 +313,7 @@ form button {
 .left-side img{
 aspect-ratio: 1/1;
 max-width: 100%;
-max-height: 33%;  
+max-height: 32.5%;
 
 }
 .ad img {
@@ -336,8 +336,15 @@ max-height: 33%;
   display: grid;
   grid-template-columns:repeat(3,1fr);
   grid-template-rows: 1fr;
+  color: var(--main-text);
+  margin-bottom: 10vh;
 }
-
+#hytter img{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  border-radius: 5%;
+}
 .ubetjent{
   grid-column: 1/2;
   grid-row: 1/2;
@@ -352,33 +359,39 @@ max-height: 33%;
 }
 .sporsmal{
   grid-column: 1/4;
-  grid-row: 2/3;
+  grid-row: 3/4;
 }
 .hvemkan{
   grid-column: 1/2;
-  grid-row: 3/4;
+  grid-row: 4/5;
 }
 .bestille{
   grid-column: 2/3;
-  grid-row: 3/4;
+  grid-row: 4/5;
 }
 .last{
   grid-column: 3/4;
-  grid-row: 3/4;
+  grid-row: 4/5;
 }
 .apne{
   grid-column: 1/2;
-  grid-row: 4/5;
+  grid-row: 5/6;
 }
 .hund{
   grid-column: 3/4;
-  grid-row: 4/5;
+  grid-row: 5/6;
 }
 .koster{
   grid-column: 2/3;
-  grid-row: 4/5;
+  grid-row: 5/6;
 }
 
+#footimg {
+  grid-column: 1/4;
+  grid-row: 6/7;
+  width: 30%;
+  margin: auto;
+} 
 
 .main2 h3{
   text-decoration: underline;
