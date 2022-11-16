@@ -6,7 +6,7 @@
   --underline-1: green;
   --underline-2: orange;
   --redtext: #D80032;
-  --hoverbg: #fafafa;
+  --hoverbg: rgb(228, 228, 228);
 }
 :root:has(#darkmode:checked) {
   --main-bg: white;
@@ -16,7 +16,7 @@
   --underline-1: green;
   --underline-2: orange;
   --redtext: #D82D20;
-  --hoverbg: #3a3b3c;
+  --hoverbg: rgb(228, 228, 228);
 }
 * {
   transition: background-color 0.5s, color 0.2s;
