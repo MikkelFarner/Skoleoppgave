@@ -193,7 +193,8 @@ nav label {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   opacity: 1;
   position: absolute;
-  margin-top: 100px;
+  margin-top: 15%;
+  border-radius: 10px;
 }
 #center {
   display: flex;
@@ -431,7 +432,7 @@ form button {
   padding: 1rem;
   background-color: var(--redtext);
   border: 2px solid#000;
-  border-radius: 30px;
+  border-radius: 15px;
   margin-top: 50px;
 }
 .footimg2 a{
@@ -452,7 +453,12 @@ form button {
 #hytter p {
   margin-inline: 5ch;
 }
-
+#index p{
+  margin-inline: 5ch ;
+}
+#index{
+  text-align: center;
+}
 #index {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -500,7 +506,7 @@ form button {
   padding: 2rem;
   font-size: 2rem;
   margin-top: 20px;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 .main2:has(img:hover) img:not(:hover) {
   opacity: 0.8;
@@ -530,8 +536,16 @@ form button {
   display: flex;
 }
 
-span {
+h2 span {
   color: var(--redtext);
   text-decoration: underline;
   text-decoration-color: var(--redtext);
+}
+@media (max-width: 1080px){
+  .main p{
+    margin: 0 1ch;
+  }
+  .main h1{
+    font-size: 2rem;
+  }
 }
