@@ -5,7 +5,7 @@
   --accent-text: black;
   --underline-1: green;
   --underline-2: orange;
-  --redtext: #D80032;
+  --redtext: #d80032;
   --hoverbg: rgb(228, 228, 228);
 }
 :root:has(#darkmode:checked) {
@@ -15,15 +15,19 @@
   --accent-text: white;
   --underline-1: green;
   --underline-2: orange;
-  --redtext: #D82D20;
+  --redtext: #d82d20;
   --hoverbg: rgb(228, 228, 228);
 }
+
 * {
+  scroll-behavior:smooth;
   transition: background-color 0.5s, color 0.2s;
+  font-family: 'Times New Roman', sans-serif;
 }
 body {
   margin: 0;
   overflow-x: hidden;
+
 }
 nav li:last-child {
   margin-right: 3rem;
@@ -78,6 +82,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 .upper {
   background-color: var(--main-bg);
@@ -135,7 +140,7 @@ li.dropdown {
   margin-top: 10px;
 }
 .dropdown-content a {
-  color:black;
+  color: black;
   padding: 12px 12px;
   text-decoration: none;
   display: block;
@@ -239,6 +244,7 @@ form textarea {
   padding: 10px 5px;
   width: 78%;
   font-size: 20px;
+  resize: vertical;
 }
 form button {
   margin-top: 5px;
@@ -292,15 +298,21 @@ form button {
   align-items: center;
   color: var(--main-text);
 }
-.main h1{
+.main h1 {
   font-size: 4rem;
   text-decoration: underline;
   text-decoration-color: var(--redtext);
   margin: 0;
 }
-.main p{
+.main h4 {
+  font-size: 3rem;
+  text-decoration: underline;
+  text-decoration-color: var(--redtext);
+  margin: 0;
+}
+.main p {
   font-size: 1.5rem;
-  margin: 0 5ch ;
+  margin: 0 10ch;
 }
 .left-side {
   background-color: var(--main-bg);
@@ -310,11 +322,10 @@ form button {
   flex-direction: column;
   justify-content: space-between;
 }
-.left-side img{
-aspect-ratio: 1/1;
-max-width: 100%;
-max-height: 32.5%;
-
+.left-side img {
+  aspect-ratio: 1/1;
+  max-width: 100%;
+  max-height: 32.5%;
 }
 .ad img {
   width: 180px;
@@ -323,9 +334,10 @@ max-height: 32.5%;
 .ad {
   grid-column: 3/4;
   height: 100%;
-  
 }
-.main2{
+.main2 {
+  width: 90%;
+  margin: auto;
   margin-top: 5%;
   display: grid;
   grid-column: 1/4;
@@ -334,62 +346,71 @@ max-height: 32.5%;
   color: var(--main-text);
   border-top: 4px solid var(--redtext);
 }
-#hytter{
+.main3 {
+  width: 100%;
+  grid-column: 1/4;
+  grid-row: 3/4;
+  border-top: 4px solid var(--redtext);
+  background-color: var(--accent-bg);
+  margin-top:5%;
+
+}
+#hytter {
   display: grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   color: var(--main-text);
   margin-bottom: 10vh;
 }
-#hytter img{
+#hytter img {
   width: 90%;
   height: 100%;
   margin: auto;
   border-radius: 5%;
 }
-#index img{
+#index img {
   width: 90%;
   height: 100%;
   margin: auto;
   border-radius: 5%;
 }
-.ubetjent{
+.ubetjent {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-.selvbetjent{
+.selvbetjent {
   grid-column: 2/3;
   grid-row: 1/2;
 }
-.betjent{
+.betjent {
   grid-column: 3/4;
   grid-row: 1/2;
 }
-.sporsmal{
+.sporsmal {
   grid-column: 1/4;
   grid-row: 3/4;
 }
-.hvemkan{
+.hvemkan {
   grid-column: 1/2;
   grid-row: 4/5;
 }
-.bestille{
+.bestille {
   grid-column: 2/3;
   grid-row: 4/5;
 }
-.last{
+.last {
   grid-column: 3/4;
   grid-row: 4/5;
 }
-.apne{
+.apne {
   grid-column: 1/2;
   grid-row: 5/6;
 }
-.hund{
+.hund {
   grid-column: 3/4;
   grid-row: 5/6;
 }
-.koster{
+.koster {
   grid-column: 2/3;
   grid-row: 5/6;
 }
@@ -399,69 +420,118 @@ max-height: 32.5%;
   grid-row: 6/7;
   width: 100%;
   margin: auto;
-} 
+}
 
-.main2 h3{
+.footimg2 {
+  grid-column: 1/4;
+  grid-row: 6/7;
+  margin: auto;
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  background-color: var(--redtext);
+  border: 2px solid#000;
+  border-radius: 30px;
+  margin-top: 50px;
+}
+.footimg2 a{
+  text-decoration: none;
+  color: white;
+}
+
+.main2 h3 {
   text-decoration: underline;
   text-decoration-color: var(--redtext);
   text-align: center;
   font-size: 2rem;
 }
 
-#hytter h1{
+#hytter h1 {
   text-align: center;
 }
-#hytter p{
+#hytter p {
   margin-inline: 5ch;
 }
 
-#index{
+#index {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 100px;
 }
-#index a{
+#index > div > p > a {
   border: 2px solid black;
-  border-radius: 3px;
-  margin: 1rem;
-  font-size: 14px;
+  border-radius: 30px;
+  font-size: 1.2rem;
   background-color: var(--redtext);
   text-decoration: none;
   color: white;
-  padding: 2px;
+  padding: 10px;
 }
-#index h3{
+#index h3 {
   color: var(--main-text);
   font-size: 2.5rem;
 }
-.iframe{
+.iframe {
   grid-row: 1/2;
   grid-column: 1/4;
   margin: auto;
 }
-.iframe iframe{
+.iframe iframe {
   border: 2px solid var(--redtext);
-
 }
-.korthytte{
-text-align: center;
+.korthytte {
+  text-align: center;
   grid-row: 2/3;
   grid-column: 1/2;
 }
-.korttilbud{
+.korttilbud {
   text-align: center;
   grid-row: 2/3;
   grid-column: 3/4;
 }
-.korttur{
+.korttur {
   text-align: center;
 }
-.innmelding{
+.innmelding {
   background-color: var(--redtext);
   color: white;
   text-decoration: none;
   border: 2px solid black;
   padding: 2rem;
   font-size: 2rem;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+.main2:has(img:hover) img:not(:hover) {
+  opacity: 0.8;
+  scale: 0.95;
+}
+.main2 img {
+  transition: scale 0.5s, opacity 0.5s;
+}
+.main2:has(img:hover) .footimg:not(:hover) {
+  opacity: 1;
+  scale: 1;
+}
+.main2:has(img:hover) .nohover:not(:hover) {
+  opacity: 1;
+  scale: 1;
+}
+
+#hytter h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.kampanje {
+  font-size: 2rem;
+}
+.tilbudimg {
+  display: flex;
+}
+
+span {
+  color: var(--redtext);
+  text-decoration: underline;
+  text-decoration-color: var(--redtext);
 }
