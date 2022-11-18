@@ -98,7 +98,7 @@ nav ul li {
   text-align: left;
 }
 
-nav ul li:after {
+nav ul li::after {
   position: absolute;
   content: "";
   height: 2px;
