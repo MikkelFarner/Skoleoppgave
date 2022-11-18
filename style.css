@@ -19,15 +19,25 @@
   --hoverbg: rgb(228, 228, 228);
 }
 
+@font-face {
+  font-family: Berlin sans;
+  src: url(images/BRLNSR.TTF);
+}
+
 * {
   scroll-behavior:smooth;
   transition: background-color 0.5s, color 0.2s;
-  font-family: 'Times New Roman', sans-serif;
+  font-family: sans-serif;
+}
+p{
+  font-family: sans-serif;
+}
+.main2 h1, .main2 h3, .main2 h1 b {
+  font-family:'Berlin sans', sans-serif;
 }
 body {
   margin: 0;
   overflow-x: hidden;
-
 }
 nav li:last-child {
   margin-right: 3rem;
@@ -203,6 +213,7 @@ nav label {
   background-image: url(images/feedback.png);
   background-repeat: no-repeat;
   background-position: bottom right;
+  background-size: cover;
 }
 #overflow {
   overflow: hidden;
@@ -277,7 +288,10 @@ form button {
   width: 100%;
 }
 .site-h1 h1 {
+  font-family: 'berlin sans', sans-serif;
   text-align: center;
+  font-weight: normal;
+  letter-spacing: 0.1ch;
   font-size: 5rem;
   color: white;
   z-index: 2;
@@ -300,12 +314,14 @@ form button {
   color: var(--main-text);
 }
 .main h1 {
+  font-family: 'berlin sans', sans-serif;
   font-size: 4rem;
   text-decoration: underline;
   text-decoration-color: var(--redtext);
   margin: 0;
 }
 .main h4 {
+  font-family: 'berlin sans', sans-serif;
   font-size: 3rem;
   text-decoration: underline;
   text-decoration-color: var(--redtext);
